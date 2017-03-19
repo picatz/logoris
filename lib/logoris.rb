@@ -1,6 +1,6 @@
 class Logoris
 
-  VERSION = "0.1.0"
+  VERSION = "1.0.0"
 
   # The optional out_file to log stdout events.
   # @return [String]

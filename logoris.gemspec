@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'logoris/version'
+require 'logoris'
 
 Gem::Specification.new do |spec|
   spec.name          = "logoris"
@@ -9,19 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Kent Gruber"]
   spec.email         = ["kgruber1@emich.edu"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A simple, unified interface to manage logging for command-line applications to the appropriate standard stream.}   
+  spec.description   = %q{Logoris a Ruby gem that provides a simple, unified interface to manage logging for command-line applications to the appropriate standard stream. Do you hate having to manage your standard streams? Are your stderr events actually going to stdout, and you're like "whoa I didn't even know?" -- and you want a simple way to do this? You silly rabbit you: this is the gem for you.} 
+  spec.homepage      = "https://github.com/picatz/logoris"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
