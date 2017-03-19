@@ -6,7 +6,7 @@ require 'logoris'
 Gem::Specification.new do |spec|
   spec.name          = "logoris"
   spec.version       = Logoris::VERSION
-  spec.authors       = ["Kent Gruber"]
+  spec.authors       = ["Kent 'picat' Gruber"]
   spec.email         = ["kgruber1@emich.edu"]
 
   spec.summary       = %q{A simple, unified interface to manage logging for command-line applications to the appropriate standard stream.}   
